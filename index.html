@@ -39,7 +39,7 @@
           </div>
           <p class="intro__left-col-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
           <div class="intro__left-col-buttons">
-            <a class="intro__left-col-btn-order" href="#">Order now</a>
+            <a class="intro__left-col-btn-order button-styled" href="#">Order now</a>
             <a class="intro__left-col-btn-video" href="#">Watch the video</a><a class="intro__left-col-btn-video-ico" href="#"><i class="far fa-play-circle"></i></a>
           </div>         
         </div>
@@ -93,7 +93,7 @@
           </div>
         </div>
         <div class="features__col-center">
-          <div class="section-top features__top">
+          <div class="section-top">
             <div class="section-top__head">
               <p class="section-top__head-one features__head-one">Features</p>
               <div class="section-top__head-separator"></div>
@@ -124,102 +124,104 @@
         </div>
         <p class="section-top__head-text results__head-text">Don't forget to check these real success.</p>
       </div>
-      <div class="results__slider">
-        <div class="results__slider-round-left" onclick="prevSlide()"><div class="results__slider-arrow-left"></div></div>
-        <div class="results__slider-window">
-          <ul class="results__slider-container">
-            <li class="results__slider-item">
-              <img class="results__slider-item-before-img" src="images/results-jerry-before.jpg" alt="Jerry before weight loss" width="262" height="300">
-              <img class="results__slider-item-after-img" src="images/results-jerry-after.jpg" alt="Jerry after weight loss" width="360" height="400">
-              <div class="results__slider-item-info">
-                <div class="results__slider-item-info-weight">
-                  <div class="results__slider-item-weight-before item-weight">
-                    <div class="results__slider-item-weight-before-row item-weight__row">
-                      <p class="results__slider-item-weight-before-num item-weight__row-num">83</p>
-                      <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
+      <div class="slider results__slider">
+        <div class="slider__main results__slider-main">
+          <div class="results__slider-round-left" onclick="resultsSlider.prevSlide()"><div class="results__slider-arrow-left"></div></div>        
+          <div class="slider__window results__slider-window">
+            <ul class="results__slider-container slider__container">
+              <li class="results__slider-item">
+                <img class="results__slider-item-before-img" src="images/results-jerry-before.jpg" alt="Jerry before weight loss" width="262" height="300">
+                <img class="results__slider-item-after-img" src="images/results-jerry-after.jpg" alt="Jerry after weight loss" width="360" height="400">
+                <div class="results__slider-item-info">
+                  <div class="results__slider-item-info-weight">
+                    <div class="results__slider-item-weight-before item-weight">
+                      <div class="results__slider-item-weight-before-row item-weight__row">
+                        <p class="results__slider-item-weight-before-num item-weight__row-num">83</p>
+                        <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
                     </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
+                    <div class="results__slider-item-weight-after item-weight">
+                      <div class="results__slider-item-weight-after-row item-weight__row">
+                        <p class="results__slider-item-weight-after-num item-weight__row-num">58</p>
+                        <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">After</p>
+                    </div>
                   </div>
-                  <div class="results__slider-item-weight-after item-weight">
-                    <div class="results__slider-item-weight-after-row item-weight__row">
-                      <p class="results__slider-item-weight-after-num item-weight__row-num">58</p>
-                      <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
-                    </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">After</p>
-                  </div>
-                </div>
-                <div class="results__slider-item-person">
-                  <p class="results__slider-item-person-name">Jerry Halloway</p>
-                  <p class="results__slider-item-person-age">Age: 25</p>
-                </div>
-              </div>
-            </li>
-            <li class="results__slider-item results__slider-item-current">
-              <img class="results__slider-item-before-img" src="images/results-mike-before.jpg" alt="Mike before weight loss" width="262" height="300">
-              <img class="results__slider-item-after-img" src="images/results-mike-after.jpg" alt="Mike after weight loss" width="360" height="400">
-              <div class="results__slider-item-info">
-                <div class="results__slider-item-info-weight">
-                  <div class="results__slider-item-weight-before item-weight">
-                    <div class="results__slider-item-weight-before-row item-weight__row">
-                      <p class="results__slider-item-weight-before-num item-weight__row-num">87</p>
-                      <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
-                    </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
-                  </div>
-                  <div class="results__slider-item-weight-after item-weight">
-                    <div class="results__slider-item-weight-after-row item-weight__row">
-                      <p class="results__slider-item-weight-after-num item-weight__row-num">63</p>
-                      <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
-                    </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">After</p>
+                  <div class="results__slider-item-person">
+                    <p class="results__slider-item-person-name">Jerry Halloway</p>
+                    <p class="results__slider-item-person-age">Age: 25</p>
                   </div>
                 </div>
-                <div class="results__slider-item-person">
-                  <p class="results__slider-item-person-name">Mike Andersen</p>
-                  <p class="results__slider-item-person-age">Age: 28</p>
-                </div>
-              </div>
-            </li>
-            <li class="results__slider-item">
-              <img class="results__slider-item-before-img" src="images/results-ted-before.jpg" alt="Ted before weight loss" width="262" height="300">
-              <img class="results__slider-item-after-img" src="images/results-ted-after.jpg" alt="Ted after weight loss" width="360" height="400">
-              <div class="results__slider-item-info">
-                <div class="results__slider-item-info-weight">
-                  <div class="results__slider-item-weight-before item-weight">
-                    <div class="results__slider-item-weight-before-row item-weight__row">
-                      <p class="results__slider-item-weight-before-num item-weight__row-num">98</p>
-                      <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
+              </li>
+              <li class="results__slider-item slider__item-current">
+                <img class="results__slider-item-before-img" src="images/results-mike-before.jpg" alt="Mike before weight loss" width="262" height="300">
+                <img class="results__slider-item-after-img" src="images/results-mike-after.jpg" alt="Mike after weight loss" width="360" height="400">
+                <div class="results__slider-item-info">
+                  <div class="results__slider-item-info-weight">
+                    <div class="results__slider-item-weight-before item-weight">
+                      <div class="results__slider-item-weight-before-row item-weight__row">
+                        <p class="results__slider-item-weight-before-num item-weight__row-num">87</p>
+                        <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
                     </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
-                  </div>
-                  <div class="results__slider-item-weight-after item-weight">
-                    <div class="results__slider-item-weight-after-row item-weight__row">
-                      <p class="results__slider-item-weight-after-num item-weight__row-num">70</p>
-                      <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
+                    <div class="results__slider-item-weight-after item-weight">
+                      <div class="results__slider-item-weight-after-row item-weight__row">
+                        <p class="results__slider-item-weight-after-num item-weight__row-num">63</p>
+                        <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">After</p>
                     </div>
-                    <p class="results__slider-item-weight-before-title item-weight__title">After</p>
+                  </div>
+                  <div class="results__slider-item-person">
+                    <p class="results__slider-item-person-name">Mike Andersen</p>
+                    <p class="results__slider-item-person-age">Age: 28</p>
                   </div>
                 </div>
-                <div class="results__slider-item-person">
-                  <p class="results__slider-item-person-name">Ted Barney</p>
-                  <p class="results__slider-item-person-age">Age: 31</p>
+              </li>
+              <li class="results__slider-item">
+                <img class="results__slider-item-before-img" src="images/results-ted-before.jpg" alt="Ted before weight loss" width="262" height="300">
+                <img class="results__slider-item-after-img" src="images/results-ted-after.jpg" alt="Ted after weight loss" width="360" height="400">
+                <div class="results__slider-item-info">
+                  <div class="results__slider-item-info-weight">
+                    <div class="results__slider-item-weight-before item-weight">
+                      <div class="results__slider-item-weight-before-row item-weight__row">
+                        <p class="results__slider-item-weight-before-num item-weight__row-num">98</p>
+                        <p class="results__slider-item-weight-before-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">Before</p>
+                    </div>
+                    <div class="results__slider-item-weight-after item-weight">
+                      <div class="results__slider-item-weight-after-row item-weight__row">
+                        <p class="results__slider-item-weight-after-num item-weight__row-num">70</p>
+                        <p class="results__slider-item-weight-after-unit item-weight__row-unit">kg</p>
+                      </div>
+                      <p class="results__slider-item-weight-before-title item-weight__title">After</p>
+                    </div>
+                  </div>
+                  <div class="results__slider-item-person">
+                    <p class="results__slider-item-person-name">Ted Barney</p>
+                    <p class="results__slider-item-person-age">Age: 31</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="results__slider-round-right" onclick="resultsSlider.nextSlide()"><div class="results__slider-arrow-right"></div></div>
         </div>
-        <div class="results__slider-round-right" onclick="nextSlide()"><div class="results__slider-arrow-right"></div></div>
+        <ul class="slider__dots results__slider-dots">
+          <li class="results__dot" onclick="resultsSlider.toSlide(event)"></li>
+          <li class="results__dot slider__dot-current" onclick="resultsSlider.toSlide(event)"></li>
+          <li class="results__dot" onclick="resultsSlider.toSlide(event)"></li>
+        </ul>
       </div>
-      <ul class="results__dots">
-        <li class="results__dot" onclick="toSlide(event)"></li>
-        <li class="results__dot results__dot-current" onclick="toSlide(event)"></li>
-        <li class="results__dot" onclick="toSlide(event)"></li>
-      </ul>
     </section>
     <section class="testimonials">
       <h2 class="testimonials__header visually-hidden">Testimonials</h2>
       <div class="testimonials__container">
-        <div class="section-top testimonials__top">
+        <div class="section-top">
           <div class="section-top__head">
             <p class="section-top__head-one testimonials__head-one">Client</p>
             <div class="section-top__head-separator"></div>
@@ -264,18 +266,18 @@
               </ul>
             </div>
           </div>
-          <ul class="slider__dots">
-            <li class="testimonials__slider-dot"></li>
-            <li class="testimonials__slider-dot slider__dot-current"></li>
-            <li class="testimonials__slider-dot"></li>
+          <ul class="slider__dots testimonials__slider-dots">
+            <li class="testimonials__slider-dot" onclick="testimonialsSlider.toSlide(event)"></li>
+            <li class="testimonials__slider-dot slider__dot-current" onclick="testimonialsSlider.toSlide(event)"></li>
+            <li class="testimonials__slider-dot" onclick="testimonialsSlider.toSlide(event)"></li>
           </ul>  
         </div>  
       </div>
     </section>
     <section class="facts">
       <h2 class="visually-hidden">Supplement facts</h2>
-      <div class="testimonials__container">
-        <div class="section-top facts__top">
+      <div class="facts__container">
+        <div class="section-top">
           <div class="section-top__head">
             <p class="section-top__head-one facts__head-one">Supplement</p>
             <div class="section-top__head-separator"></div>
@@ -286,10 +288,12 @@
         <div class="facts__ingridients">
           <div class="facts__ingridients-col1">
             <div class="facts__ingridients-col1-header">
-              <p class="facts__ingridients-col1-header-left">Ingredients</p>
-              <div class="facts__ingridients-col1-header-rigth">
-                <p class="facts__ingridietns-col1-heder-right1">Per servinh</p>
-                <p class="facts__ingridietns-col1-heder-right2">(MG)</p>
+              <div class="facts__ingridients-col1-header-container">
+                <p class="facts__ingridients-col1-header-left">Ingredients</p>
+                <div class="facts__ingridients-col1-header-rigth">
+                  <p class="facts__ingridients-col1-header-right1">Per serving</p>
+                  <p class="facts__ingridients-col1-header-right2">(MG)</p>
+                </div>
               </div>
             </div>
             <ul class="facts__ingridients-list">
@@ -326,17 +330,73 @@
                 <p class="facts__ingridients-item-count">8</p>
               </li>
             </ul>
-            <div class="facts__ingridients-list-download">
-              <p class="facts__ingridients-list-downloal-left">Download specs</p>
+            <div class="facts__ingridients-list-download button-styled">
+              <p class="facts__ingridients-list-download-left">Download specs</p>
               <p class="facts__ingridients-list-download-right">(50KB)</p>
             </div>
           </div>          
           <ul class="facts__ingridients-details">
-            <li class="facts__ingridients-details-item">
-              <img src="" alt="" class="facts__ingridients-details-img">
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
               <div class="facts__ingridients-details-header">
-                <div class="facts__ingridients-details-name"></div>
-                <div class="facts__ingridients-details-count"></div>
+                <div class="facts__ingridients-details-name">Citrus Aurantium</div>
+                <div class="facts__ingridients-details-count">100 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Green Coffee Extract</div>
+                <div class="facts__ingridients-details-count">72 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Green Tea Extract</div>
+                <div class="facts__ingridients-details-count">88 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Guarana Extract w/ 10% Caffeine</div>
+                <div class="facts__ingridients-details-count">4 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">L-Phenilalanine</div>
+                <div class="facts__ingridients-details-count">67 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Niacin</div>
+                <div class="facts__ingridients-details-count">87 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Red Pepper Extract</div>
+                <div class="facts__ingridients-details-count">323 mg</div>
+              </div>
+              <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+            </li>
+            <li class="facts__ingridients-details-item visually-hidden">
+              <img src="images/facts-green-coffee.jpg" alt="" class="facts__ingridients-details-img">
+              <div class="facts__ingridients-details-header">
+                <div class="facts__ingridients-details-name">Vitamin B6</div>
+                <div class="facts__ingridients-details-count">8 mg</div>
               </div>
               <p class="facts__ingridients-details-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit, sed diam nonummy nibh euismod tincidu nt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
             </li>
@@ -345,21 +405,117 @@
       </div>
     </section>
     <section class="sertificats">
-
+      <div class="sertificats__container">
+        <div class="sertificats__top">
+          <h2 class="sertificats__header">Certifications</h2>
+          <p class="sertificats__top2">We don't sell craps. We're sertified.</p>
+        </div>
+        <ul class="sertificats__list">
+          <li class="sertificats__item">
+            <img src="images/cert-logo-cradle.png" alt="logo Cradletocradle" class="sertificats__img" width="139" height="93">
+          </li>
+          <li class="sertificats__item">
+            <img src="images/cert-logo-qcp.png" alt="logo QCP" class="sertificats__img" width="243" height="60">
+          </li>
+          <li class="sertificats__item">
+            <img src="images/cert-logo-nsf.png" alt="logo NSF" class="sertificats__img" width="74" height="73">
+          </li>
+          <li class="sertificats__item">
+            <img src="images/cert-logo-sgs.png" alt="logo SGS" class="sertificats__img" width="81" height="79">
+          </li>
+          <li class="sertificats__item">
+            <img src="images/cert-logo-geotrust.png" alt="logo Geothrust" class="sertificats__img" width="178" height="104">
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="order">
-
+      <h2 class="order__header visually-hidden">Order now</h2>
+      <div class="order__container">
+        <img src="images/order-bottle.png" alt="" class="order__suppl-img" width="744" height="489">
+        <div class="order__right-col">
+          <div class="order__rcol-top">
+            <p class="order__rcol-top-header">A supplement</p>
+            <p class="order__rcol-top-price">$29 USDs</p>
+          </div>
+          <p class="order__rcol-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus, tempore nisi dolore cum facere et! Nemo blanditiis, ea omnis sunt distinctio quam quod provident quasi ad hic inventore impedit.
+          </p>
+          <a href="#" class="order__right-col-btn-order">Order now</a>
+        </div>  
+      </div>
     </section>
     <section class="subscribe">
-
+      <div class="section-top subscribe__top">
+        <div class="section-top__head">
+          <p class="section-top__head-one subscribe__head-one">Subscribe</p>
+          <div class="section-top__head-separator"></div>
+          <p class="section-top__head-two subscribe__head-two">For tips & offers</p>  
+        </div>
+        <p class="section-top__head-text subscribe__head-text">We regularly knock our customers with useful tips and offers.</p>
+      </div>
+      <form class="subscribe__feedback">
+        <input type="text" class="subscribe__email-input" placeholder="Enter Your Email">
+        <input type="button" class="subscribe__subscribe-button button-styled" value="subscribe">
+      </form>
     </section>
     <section class="inquire">
-
+      <div class="section-top inquire__top">
+        <div class="section-top__head">
+          <p class="section-top__head-one inquire__head-one">Inquire</p>
+          <div class="section-top__head-separator"></div>
+          <p class="section-top__head-two inquire__head-two">Your issue</p>  
+        </div>
+        <p class="section-top__head-text inquire__head-text">We're always happy to reply our customers.</p>
+      </div>
+      <form class="inquire__form" action="">
+        <div class="inquire__form-row1">
+          <input class="inquire__form-name" type="text" name="" placeholder="Name">
+          <input type="text" class="inquire__form-email" placeholder="Email">
+        </div>
+        <input type="text" class="inquire__form-subject" placeholder="Subject" name="subject">
+        <textarea class="inquire__form-text" name="message"></textarea>
+        <input type="button" class="inquire__form-button button-styled" value="Send">
+      </form>      
     </section>
   </main>
   <footer class="footer">
-
+    <div class="footer__container">
+      <div class="footer__nav-copy">
+        <p class="footer__copyright">© Amazon LLC. All Rights Reserved</p>
+        <nav class="footer__navigation">
+          <ul class="footer__links-list">
+            <li class="footer__link-item">
+              <a href="#" class="footer__link-about">About</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#" class="footer__link-terms">Terms</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#" class="footer__link-privacy">Privacy</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="#" class="footer__link-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li class="footer__social-item">
+          <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+        </li>
+      </ul>
+    </div>
   </footer>
-</body>
   <script src="scripts/script.js"></script>
+</body>
 </html>
